@@ -1,0 +1,31 @@
+
+body {
+    margin: 0;
+    font-family: 'Georgia', serif;
+    background-color: #ffffff;
+    color: #333;
+  }
+  
+  
+  header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #fefefe;
+    border-bottom: 1px solid #e0e0e0;
+    padding: 15px 0;
+    z-index: 1000;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.05);
+  }
+  
+  
+  main {
+    padding-top: 80px;
+    max-width: 100%;
+    margin: auto;
+    padding-left: 5px;
+    padding-right: 5px;
+    
+  }
+  
