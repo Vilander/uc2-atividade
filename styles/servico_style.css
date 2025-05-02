@@ -1,0 +1,113 @@
+/* === BASE === */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #ffffff;
+  color: #333;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+}
+
+h1, h2, h3 {
+  color: #2e7d32;
+}
+
+strong{
+  color: #023004;
+}
+
+main{
+  background-color: #ebf3eb9d;
+}
+
+/* === CONTEÚDO PRINCIPAL === */
+#conteudo-col-2 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 2rem;
+  gap: 2rem;
+}
+
+.caixa-creme {
+  background-color: #daf1dd70;
+  padding: 2rem;
+  text-align: center;
+  border-radius: 8px;
+  box-shadow: 10px 5px 5px rgba(1, 58, 10, 0.05);
+}
+
+#servicos {
+  max-width: 800px;
+  margin: 2rem auto 0;
+  text-align: left;
+}
+
+/* === LISTAS === */
+.modalidades li {
+  list-style-type: "✔️ ";
+  margin-bottom: 10px;
+}
+
+.servicos-lista li {
+  list-style-type: "🟢 ";
+  margin-bottom: 10px;
+}
+
+.service-imagem img {
+  width: 100%;
+  max-width: 800px; /* Ou ajuste conforme seu layout */
+  height: auto;
+  display: block;
+  margin: 0 auto 2rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+
+/* === BOTÃO === */
+.botao-conhecer {
+  display: inline-block;
+  background-color: #4CAF50;
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border-radius: 6px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+  margin-top: 1rem;
+}
+
+.botao-conhecer:hover {
+  background-color: #388e3c;
+}
+
+/* === RODAPÉ === */
+.footer-logo {
+  width: 2rem;
+  height: auto;
+}
+
+.footer-text {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-style: italic;
+  font-size: small;
+}
+
+/* === ÍCONES SOCIAIS === */
+.social-icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
+  margin-top: 1rem;
+}
+
+.social-icon {
+  width: 2rem;
+  transition: transform 0.2s ease-in-out;
+}
+
+.social-icon:hover {
+  transform: scale(1.1);
+}
