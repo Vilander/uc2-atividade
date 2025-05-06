@@ -57,12 +57,12 @@
     <main>
       <section class="container mt-5">
         <div class="form-box p-4">
-          <h2 class="mb-4">Agende Seu Horário</h2>
+          <h2 class="mb-4">Agende Seu Horário:</h2>
           <form>
             <!-- Nome -->
             <div class="mb-3">
               <label for="nome" class="form-label">Nome</label>
-              <input type="text" class="form-control" id="nome" placeholder="Seu nome" required>
+              <input type="text" class="form-control" id="nome" placeholder="Digite seu nome..." required>
             </div>
     
             <!-- Email -->
@@ -86,7 +86,16 @@
                 <option value="online">Atendimento On-line</option>
               </select>
             </div>
-    
+            
+            <div class="mb-3">
+              <label for="data_atendimento" class="form-label">Data</label>
+              <input type="date" class="form-control" id="data_atendimento">
+            </div>
+
+            <div class="mb-3">
+              <label for="hora_atendimento" class="form-label">Data</label>
+              <input type="time" class="form-control" id="hora_atendimento">
+            </div>
             <!-- Botão -->
             <button type="submit" class="btn btn-primary">Enviar</button>
           </form>
