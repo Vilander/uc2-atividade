@@ -1,73 +1,119 @@
+/* Item do carrossel */
 .carousel-item {
-    height: 60vh; 
-    overflow: hidden;
-  }
-  
-  .carousel-item img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    object-position: center top; 
-  }
+  height: 60vh; /* altura de 60% da altura da janela de visualização */
+  overflow: hidden; /* esconde qualquer conteúdo que ultrapasse os limites do container */
+}
 
-  .custom-caption {
-    background-color: rgba(255, 255, 255, 0.8); 
-    border-radius: 12px;
-    padding: 20px;
-    color: #000000; 
-    max-width: 600px;
-    margin: 0 auto;
-  }
-  
-  .custom-caption h5 {
-    font-size: 36px; 
-    font-weight: bold;
-    color: rgb(0, 37, 4);
-  }
-  
-  .custom-caption p {
-    font-size: 16px;
-    color: rgb(0, 37, 4);
-  }
-  
-  article {
-    display: flex;
-    gap: 1rem; /* espaçamento entre os cards */
-    flex-wrap: wrap; /* permite quebrar linha em telas pequenas */
-    padding-top: 1rem; /* espaçamento interno */
-    justify-content: center; /* centraliza os cards */
-    margin: 0 auto; /* centraliza o container */
-  }
-  
-  .social-icons {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 12px;
-    flex-wrap: wrap;
-    margin-top: 1rem;
-  }
-  
-  /* Ícones sociais */
-  .social-icon {
-    width: 2rem;
-    height: auto;
-    transition: transform 0.2s ease-in-out;
-  }
-  
-  .social-icon:hover {
-    transform: scale(1.1);
-  }
-  
-  /* Logo do rodapé */
-  .footer-logo {
-    width: 2rem;
-    height: auto;
-  }
-  
-  /* Texto do rodapé */
-  .footer-text {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-style: italic;
-    font-size: small;
-  }
+/* Imagem dentro do item do carrossel */
+.carousel-item img {
+  width: 100%; /* ocupa toda a largura do container */
+  height: 100%; /* ocupa toda a altura do container */
+  object-fit: cover; /* redimensiona a imagem mantendo proporção e preenchendo o container */
+  object-position: center top; /* posiciona o foco da imagem no centro horizontal e topo vertical */
+}
+
+/* Legenda personalizada do carrossel */
+.custom-caption {
+  background-color: rgba(255, 255, 255, 0.8); /* fundo branco semi-transparente */
+  border-radius: 12px; /* bordas arredondadas */
+  padding: 20px; /* espaçamento interno */
+  color: #000000; /* cor do texto (preto) */
+  max-width: 600px; /* largura máxima da legenda */
+  margin: 0 auto; /* centraliza horizontalmente */
+}
+
+/* Título dentro da legenda do carrossel */
+.custom-caption h5 {
+  font-size: 36px; /* tamanho grande para o título */
+  font-weight: bold; /* texto em negrito */
+  color: rgb(0, 37, 4); /* tom escuro de verde */
+}
+
+/* Parágrafo dentro da legenda do carrossel */
+.custom-caption p {
+  font-size: 16px; /* tamanho padrão do parágrafo */
+  color: rgb(0, 37, 4); /* mesmo tom escuro de verde */
+}
+
+/* Seção de artigos (ex: cards de serviços) */
+article {
+  display: flex; /* usa flexbox para layout flexível */
+  gap: 1rem; /* espaçamento entre os elementos (cards) */
+  flex-wrap: wrap; /* permite que os elementos quebrem linha */
+  padding-top: 1rem; /* espaço superior interno */
+  justify-content: center; /* centraliza os elementos na horizontal */
+  margin: 0 auto; /* centraliza o container na página */
+}
+
+/* Container do botão dentro do card */
+.card-btn {
+  margin-top: auto; /* empurra o botão para o final do card */
+  text-align: center; /* alinha o botão ao centro */
+}
+
+/* Estilo do botão personalizado */
+.btn-btn-primary {
+  background-color: #024c14; /* verde escuro */
+  border-radius: 5px; /* bordas levemente arredondadas */
+  color: white; /* texto branco */
+  padding: 10px 20px; /* espaçamento interno (vertical e horizontal) */
+  text-align: center; /* centraliza o texto no botão */
+  text-decoration: none; /* remove sublinhado */
+  display: inline-block; /* exibe como bloco em linha */
+  font-size: 16px; /* tamanho da fonte */
+  margin: 4px 2px; /* espaçamento externo */
+  cursor: pointer; /* altera o cursor para "mãozinha" */
+}
+
+/* Estrutura do card */
+.card {
+  display: flex; /* usa flexbox para layout flexível */
+  flex-direction: column; /* alinha os elementos na vertical */
+  justify-content: space-between; /* distribui o espaço entre os elementos */
+  height: 100%; /* altura total do card (quando inserido em container com altura definida) */
+}
+
+/* Corpo do card */
+.card-body {
+  display: flex; /* flexbox para layout interno */
+  flex-direction: column; /* conteúdo distribuído verticalmente */
+  justify-content: space-between; /* espaço entre os conteúdos (ex: texto e botão) */
+  flex-grow: 1; /* ocupa o espaço restante do card */
+}
+
+/* --- Rodapé (Footer) --- */
+
+/* Container dos ícones sociais */
+.social-icons {
+  display: flex; /* usa flexbox para alinhar os ícones */
+  justify-content: center; /* centraliza os ícones na horizontal */
+  align-items: center; /* alinha os ícones verticalmente */
+  gap: 12px; /* espaçamento entre os ícones */
+  flex-wrap: wrap; /* permite quebra de linha em telas menores */
+  margin-top: 1rem; /* espaço superior */
+}
+
+/* Estilo individual dos ícones sociais */
+.social-icon {
+  width: 2rem; /* largura fixa */
+  height: auto; /* altura proporcional */
+  transition: transform 0.2s ease-in-out; /* animação suave no hover */
+}
+
+/* Efeito ao passar o mouse sobre o ícone */
+.social-icon:hover {
+  transform: scale(1.1); /* aumenta levemente o tamanho do ícone */
+}
+
+/* Estilo do logo no rodapé */
+.footer-logo {
+  width: 2rem; /* largura fixa */
+  height: auto; /* altura proporcional */
+}
+
+/* Estilo do texto no rodapé */
+.footer-text {
+  font-family: Verdana, Geneva, Tahoma, sans-serif; /* fonte sem serifa */
+  font-style: italic; /* estilo itálico */
+  font-size: small; /* tamanho pequeno */
+}
