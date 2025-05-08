@@ -1,178 +1,202 @@
 /* === Estilos gerais do corpo da página === */
 body {
-    font-family: Arial, sans-serif; /* Define a fonte principal como Arial, com fallback para fontes sans-serif */
-    background-color: #ffffff; /* Define a cor de fundo como branca */
-    color: #333; /* Define a cor do texto como cinza escuro */
-    margin: 0; /* Remove as margens padrão do body */
-    padding: 0; /* Remove os espaçamentos internos padrão do body */
-    line-height: 1.6; /* Define o espaçamento entre linhas */
-  }
-  
-  /* === Títulos (h1, h2, h3) === */
-  
-  h1{
-    text-align: center; 
-    padding-top: 15px;
-    font-size: 48px;
-    color: #2e7d32
-    }
+  font-family: Arial, sans-serif;      /* Define a fonte principal como Arial, com alternativa sans-serif se não estiver disponível */
+  margin: 0;                           /* Remove toda a margem externa padrão do body */
+  padding: 0;                          /* Remove todo o espaçamento interno padrão do body */
+  line-height: 1.6;                    /* Define a altura das linhas como 1.6 vezes o tamanho da fonte (facilita a leitura) */
+}
 
-  h2{
-    font-size: 36px;
-    color: #2e7d32
-    }
-  
-  /* === Negrito com cor personalizada === */
-  strong {
-    color: #023004; /* Define o texto em negrito com um verde ainda mais escuro */
-  }
-  
-  /* === Fundo do conteúdo principal === */
-  main {
-    background-color: #a4a7a49d; /* Define um cinza claro semitransparente como fundo da tag <main> */
-  }
-  
-  .area-sobre{
-    display: flex;
-    margin: 0 auto;
-    justify-content: center;
-  }
-  /* === Caixa branca com sombra: usada para destacar seções === */
-  .caixa-branca {
-    background-color: #ffffff; /* Fundo branco */
-    padding: 2rem; /* Espaçamento interno de 2rem em todos os lados */
-    border-radius: 12px; /* Cantos arredondados */
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Sombra suave ao redor da caixa */
-    margin: 2rem; /* Espaçamento externo de 2rem */
-    max-width: 55rem;
-    height: auto;
+/* === Títulos principais === */
+.titulo-topo {
+  text-align: center;                  /* Centraliza o texto horizontalmente */
+  padding-top: 15px;                   /* Adiciona um espaçamento superior de 15px */
+  font-size: 48px;                     /* Define o tamanho da fonte em 48 pixels */
+  color: #ffffff;                      /* Define a cor do texto como branco */
+  text-shadow: 0 5px 8px rgba(0, 0, 0, 0.5); /* Aplica sombra ao texto com deslocamento vertical de 5px e blur de 8px, em preto translúcido */
+}
 
-  }
-  
-  /* === Imagens de serviços centralizadas e redimensionadas === */
-  .service-imagem img {
-    display: flex; /* Define o modelo de exibição como flex  */
-    border-radius: 12px; /* Cantos arredondados nas imagens */
-    max-width: 50rem; /* Limita a largura máxima da imagem */
-    height: auto; 
-    margin: 0 auto; /* Centraliza horizontalmente */
-  }
+.titulo-segundo {
+  font-size: 36px;                     /* Define a fonte em 36px */
+  color: #2e7d32;                      /* Define um tom de verde como cor do texto */
+}
 
-  .chamada-clinica{
-    padding-top: 25px;
-  }
-  
-  /* === Centralização de texto === */
-  .conteudo-centralizado {
-    text-align: center; /* Centraliza o conteúdo textual */
-    margin: auto;
-  }
-  
-  /* === Estilo da seção da equipe === */
-  .equipe {
-    display: flex; /* Usa layout flexível */
-    flex-direction: column; /* Os membros são empilhados verticalmente */
-    gap: 2rem; /* Espaço entre cada membro da equipe */
-    margin-top: 2rem; /* Espaço superior da seção */
-  }
-  
-  /* === Estilo individual dos membros da equipe === */
-  .membro {
-    display: flex; /* Usa layout flexível */
-    align-items: flex-start; /* Alinha os itens ao topo */
-    gap: 1rem; /* Espaço entre imagem e texto */
-    background-color: #f9f9f9; /* Fundo cinza muito claro */
-    border-radius: 8px; /* Cantos arredondados */
-    padding: 1rem; /* Espaçamento interno */
-    box-shadow: 0 2px 8px rgba(0,0,0,0.05); /* Sombra leve */
-  }
+.titulo-terceiro {
+  font-size: 28px;                     /* Define a fonte em 28px */
+  color: #2e7d32;                      /* Usa o mesmo verde do título secundário */
+  margin-top: 1.5rem;                  /* Espaçamento superior de 1.5 vezes o tamanho da fonte raiz */
+  text-align: center;                  /* Centraliza o texto */
+}
 
-  .membro p{
-    /*display: ;*/
-    margin: 0 auto;
-  }
-  
-  /* === Imagens de perfil dos membros === */
-  .membro img.perfil {
-    width: 120px; /* Largura fixa */
-    height: auto; /* Altura proporcional à largura */
-    border-radius: 8px; /* Cantos arredondados */
-  }
-  
-  /* === Estilo especial para a seção dos fundadores === */
-  .fundadores {
-    margin-top: 1rem; /* Espaço superior */
-    font-style: italic; /* Texto em itálico */
-  }
-  
-  /* === Estilo para Missão, Visão e Valores === */
-  .missao-visao-valor {
-    list-style-type: "✅ "; /* Adiciona ícone de check personalizado aos itens */
-    padding-left: 1.5rem; /* Recuo à esquerda da lista */
-    margin-top: 1rem; /* Espaçamento superior */
-  }
-  
-  /* === Espaçamento entre cada item principal da lista === */
-  .missao-visao-valor > li {
-    margin-bottom: 1rem; /* Espaço entre os itens principais */
-  }
-  
-  /* === Estilo de subitens dentro da lista === */
-  .missao-visao-valor li ul {
-    list-style-type: "• "; /* Marcador com bolinha para subitens */
-    margin-left: 1.5rem; /* Recuo à esquerda dos subitens */
-  }
+/* === Negrito com cor personalizada === */
+strong {
+  color: #023004;                      /* Altera a cor do texto em negrito para um verde mais escuro */
+}
 
-  .destaque-mvp{
-    font-style: bold;
-    font-size: 25px;
-  }
-  
-  /* === Responsividade: ajustes em telas menores (até 768px) === */
-  @media (max-width: 768px) {
-    .membro {
-      flex-direction: column; /* Empilha imagem e texto verticalmente */
-      align-items: center; /* Centraliza os itens */
-      text-align: center; /* Centraliza o texto */
-    }
-  
-    .membro img.perfil {
-      width: 100px; /* Reduz a largura da imagem em telas pequenas */
-    }
-  }
-  
-  /* === Estilo para ícones de redes sociais === */
-  .social-icons {
-    display: flex; /* Layout flexível */
-    justify-content: center; /* Centraliza horizontalmente */
-    align-items: center; /* Centraliza verticalmente */
-    gap: 12px; /* Espaço entre os ícones */
-    flex-wrap: wrap; /* Permite quebra de linha dos ícones */
-    margin-top: 1rem; /* Espaçamento superior */
-  }
-  
-  /* === Estilo dos ícones sociais individualmente === */
-  .social-icon {
-    width: 2rem; /* Define largura dos ícones */
-    height: auto; /* Mantém proporção */
-    transition: transform 0.2s ease-in-out; /* Animação suave ao passar o mouse */
-  }
-  
-  /* === Efeito ao passar o mouse nos ícones === */
-  .social-icon:hover {
-    transform: scale(1.1); /* Aumenta ligeiramente o ícone */
-  }
-  
-  /* === Logo do rodapé === */
-  .footer-logo {
-    width: 2rem; /* Define largura da logo do rodapé */
-    height: auto; /* Mantém proporção */
-  }
-  
-  /* === Texto do rodapé === */
-  .footer-text {
-    font-family: Verdana, Geneva, Tahoma, sans-serif; /* Fonte alternativa para o rodapé */
-    font-style: italic; /* Texto em itálico */
-    font-size: small; /* Tamanho menor do texto */
-  }
-  
+/* === Fundo do conteúdo principal === */
+main {
+  background-image: url(/assets/gray-texture.webp); /* Aplica uma imagem de fundo à área <main> */
+}
+
+/* === Seção "Sobre" com centralização e layout flexível === */
+.area-sobre {
+  display: flex;                       /* Ativa o Flexbox para layout flexível */
+  margin: 0 auto;                      /* Centraliza horizontalmente o conteúdo */
+  justify-content: center;            /* Alinha os itens ao centro no eixo horizontal */
+}
+
+/* === Caixa branca usada para destacar conteúdo === */
+.caixa-branca {
+  background-color: #ffffff;          /* Define o fundo da caixa como branco */
+  padding: 2rem;                       /* Espaço interno de 2rem (em todos os lados) */
+  border-radius: 12px;                 /* Arredonda os cantos com raio de 12px */
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Aplica sombra suave ao redor da caixa */
+  margin: 2rem;                        /* Espaço externo de 2rem */
+  max-width: 55rem;                    /* Largura máxima da caixa */
+  height: auto;                        /* Altura automática de acordo com o conteúdo */
+}
+
+/* === Estilo das imagens de serviços === */
+.service-imagem img {
+  display: block;                      /* Define o elemento como bloco (melhor para centralizar) */
+  border-radius: 12px;                 /* Arredonda os cantos da imagem */
+  max-width: 50rem;                    /* Define a largura máxima como 50rem */
+  height: auto;                        /* Mantém a proporção da altura da imagem */
+  margin: 0 auto;                      /* Centraliza a imagem horizontalmente */
+}
+
+/* === Texto introdutório da clínica === */
+.chamada-clinica {
+  padding-top: 25px;                   /* Adiciona espaço acima do elemento */
+  text-align: justify;                /* Justifica o texto, alinhando dos dois lados */
+}
+
+/* === Centralização de blocos de conteúdo === */
+.conteudo-centralizado {
+  text-align: center;                  /* Centraliza o conteúdo textual */
+  margin: auto;                        /* Centraliza o bloco dentro de seu contêiner pai */
+}
+
+/* === Seção da equipe com layout vertical === */
+.equipe {
+  display: flex;                       /* Ativa layout flexível */
+  flex-direction: column;             /* Alinha os elementos filhos verticalmente */
+  gap: 2rem;                           /* Espaço de 2rem entre os elementos */
+  margin-top: 2rem;                    /* Espaço superior de 2rem */
+}
+
+/* === Estilo individual para cada membro da equipe === */
+.membro {
+  display: flex;                       /* Flexbox para layout horizontal */
+  align-items: center;                /* Alinha verticalmente ao centro */
+  gap: 1rem;                           /* Espaço de 1rem entre imagem e texto */
+  background-color: #f9f9f9;          /* Cor de fundo cinza-claro */
+  border-radius: 8px;                 /* Arredondamento dos cantos */
+  padding: 1rem;                       /* Espaçamento interno */
+  box-shadow: 0 6px 2px rgba(0, 0, 0, 0.05); /* Sombra sutil */
+}
+
+.membro p {
+  margin: 0 auto;                      /* Centraliza o parágrafo horizontalmente */
+  text-align: justify;                /* Justifica o texto */
+  line-height: 1.6;                   /* Espaçamento entre linhas */
+}
+
+/* === Imagem do perfil dos membros da equipe === */
+.membro img.perfil {
+  width: 120px;                        /* Define largura fixa de 120px */
+  height: auto;                        /* Mantém proporção da altura */
+  border-radius: 8px;                 /* Arredonda a imagem */
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Sombra leve ao redor da imagem */
+}
+
+/* === Estilo da seção dos fundadores === */
+.fundadores {
+  margin-top: 1rem;                    /* Espaço superior de 1rem */
+  font-style: italic;                 /* Aplica itálico ao texto */
+}
+
+/* === Lista de Missão, Visão e Valores === */
+.missao-visao-valor {
+  list-style: none;                   /* Remove os marcadores de lista padrão */
+  padding-left: 0;                    /* Remove o recuo padrão da lista */
+  margin-top: 1rem;                   /* Espaço superior */
+  text-align: left;                  /* Alinha o texto à esquerda */
+}
+
+/* === Ícones personalizados para a lista === */
+.missao-visao-valor > li::before {
+  content: "✅";                      /* Insere ícone antes de cada item */
+  margin-right: 0.5rem;              /* Espaço entre ícone e texto */
+  color: green;                      /* Cor verde para o ícone */
+}
+
+/* === Subitens da lista de valores === */
+.valores-lista {
+  list-style: none;                   /* Remove marcadores padrão */
+  padding-left: 1.5rem;              /* Espaço interno à esquerda */
+  margin-top: 0.5rem;                /* Espaço superior */
+}
+
+/* === Marcadores personalizados para subitens === */
+.valores-lista > li::before {
+  content: "•";                      /* Insere bolinha como marcador */
+  color: #2e7d32;                    /* Usa o verde principal */
+  margin-right: 0.5rem;              /* Espaço entre marcador e texto */
+}
+
+/* === Destaque de texto (Missão, Visão e Valores) === */
+.destaque-mvp {
+  font-weight: bold;                 /* Deixa o texto em negrito (correto) */
+  font-size: 25px;                   /* Define o tamanho da fonte */
+}
+
+/* === Botão de ação "Conhecer" === */
+.botao-conhecer {
+  display: inline-block;             /* Permite tratar como bloco, mas dentro de linha */
+  background-color: #2e7d32;         /* Cor de fundo verde */
+  color: white;                      /* Cor do texto branca */
+  padding: 10px 20px;                /* Espaço interno: 10px em cima/baixo, 20px nos lados */
+  border: none;                      /* Remove borda padrão */
+  border-radius: 5px;                /* Arredonda o botão */
+  text-decoration: none;             /* Remove sublinhado (caso seja link) */
+  cursor: pointer;                   /* Mostra cursor de clique */
+}
+
+.membro img.perfil {
+  width: 100px;                   /* Reduz a largura da imagem para 100px */
+}
+
+
+/* === Ícones de redes sociais === */
+.social-icons {
+  display: flex;                     /* Layout flexível para os ícones */
+  justify-content: center;          /* Centraliza horizontalmente */
+  align-items: center;              /* Alinha verticalmente */
+  gap: 12px;                         /* Espaço entre os ícones */
+  flex-wrap: wrap;                  /* Permite que os ícones quebrem linha se necessário */
+  margin-top: 1rem;                 /* Espaçamento superior */
+}
+
+/* === Estilo individual dos ícones === */
+.social-icon {
+  width: 2rem;                      /* Largura de 2rem */
+  height: auto;                     /* Altura proporcional */
+  transition: transform 0.2s ease-in-out; /* Efeito de transição suave no hover */
+}
+
+.social-icon:hover {
+  transform: scale(1.1);            /* Aumenta levemente o tamanho ao passar o mouse */
+}
+
+/* === Logo do rodapé === */
+.footer-logo {
+  width: 2rem;                      /* Define a largura da logo */
+  height: auto;                     /* Mantém a proporção da altura */
+}
+
+/* === Texto do rodapé === */
+.footer-text {
+  font-family: Verdana, Geneva, Tahoma, sans-serif; /* Fonte alternativa */
+  font-style: italic;               /* Texto em itálico */
+  font-size: small;                 /* Texto com tamanho pequeno */
+}

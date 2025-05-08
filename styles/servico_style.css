@@ -1,113 +1,135 @@
 /* === BASE === */
+
+/* Estilos globais para o corpo da página */
 body {
-  font-family: Arial, sans-serif;
-  background-color: #ffffff;
-  color: #333;
-  margin: 0;
-  padding: 0;
-  line-height: 1.6;
+  font-family: Arial, sans-serif; /* Define a fonte Arial, ou uma genérica sans-serif caso a primeira não esteja disponível */
+  background-color: #ffffff; /* Define o fundo da página como branco */
+  color: #333; /* Cor do texto como um cinza escuro para contraste */
+  margin: 0; /* Remove a margem padrão do navegador */
+  padding: 0; /* Remove o padding padrão do navegador */
+  line-height: 1.6; /* Define o espaçamento entre linhas como 1.6 vezes o tamanho da fonte */
 }
 
+/* Estilos para títulos h1, h2 e h3 */
 h1, h2, h3 {
-  color: #2e7d32;
+  color: #2e7d32; /* Cor verde para os títulos */
 }
 
-strong{
-  color: #023004;
+/* Estilo para o texto em negrito */
+strong {
+  color: #023004; /* Cor verde escuro para texto em negrito */
 }
 
-main{
-  background-color: #ebf3eb9d;
+/* Estilo para o elemento <main>, usado para conteúdo principal */
+main {
+  background-color: #ebf3eb9d; /* Fundo verde claro e semi-transparente */
 }
 
 /* === CONTEÚDO PRINCIPAL === */
+
+/* Estilo para a seção com id "conteudo-col-2" */
 #conteudo-col-2 {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  padding: 2rem;
-  gap: 2rem;
+  display: flex; /* Usando flexbox para organizar os elementos */
+  flex-wrap: wrap; /* Permite que os itens se quebrem em múltiplas linhas se necessário */
+  justify-content: center; /* Centraliza os itens horizontalmente */
+  padding: 2rem; /* Espaçamento interno de 2rem */
+  gap: 2rem; /* Espaçamento de 2rem entre os itens */
 }
 
+/* Caixa de conteúdo com fundo suave e bordas arredondadas */
 .caixa-creme {
-  background-color: #daf1dd70;
-  padding: 2rem;
-  text-align: center;
-  border-radius: 8px;
-  box-shadow: 10px 5px 5px rgba(1, 58, 10, 0.05);
+  background-color: #daf1dd70; /* Cor de fundo creme com leve transparência */
+  padding: 2rem; /* Espaçamento interno de 2rem */
+  text-align: center; /* Centraliza o texto dentro da caixa */
+  border-radius: 8px; /* Cantos arredondados de 8px */
+  box-shadow: 10px 5px 5px rgba(1, 58, 10, 0.05); /* Sombra suave para dar profundidade */
 }
 
+/* Estilo para a seção de serviços */
 #servicos {
-  max-width: 800px;
-  margin: 2rem auto 0;
-  text-align: left;
+  max-width: 800px; /* Limita a largura máxima para 800px */
+  margin: 2rem auto 0; /* Margem de 2rem no topo e centraliza horizontalmente */
+  text-align: left; /* Alinha o texto à esquerda */
 }
 
 /* === LISTAS === */
+
+/* Estilo para listas dentro da classe "modalidades" */
 .modalidades li {
-  list-style-type: "✔️ ";
-  margin-bottom: 10px;
+  list-style-type: "✔️ "; /* Usa o ícone de check como marcador de lista */
+  margin-bottom: 10px; /* Espaçamento de 10px entre os itens da lista */
 }
 
+/* Estilo para listas dentro da classe "servicos-lista" */
 .servicos-lista li {
-  list-style-type: "🟢 ";
-  margin-bottom: 10px;
+  list-style-type: "🟢 "; /* Usa o ícone de círculo verde como marcador de lista */
+  margin-bottom: 10px; /* Espaçamento de 10px entre os itens da lista */
 }
 
+/* Estilo para imagens dentro da classe "service-imagem" */
 .service-imagem img {
-  width: 100%;
-  max-width: 800px; 
-  height: auto;
-  display: block;
-  margin: 0 auto 2rem;
-  border-radius: 8px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  width: 100%; /* A imagem ocupa toda a largura do container */
+  max-width: 800px; /* A largura máxima é de 800px */
+  height: auto; /* Mantém a proporção da imagem */
+  display: block; /* Remove o espaço abaixo da imagem */
+  margin: 0 auto 2rem; /* Centraliza a imagem e adiciona 2rem de margem inferior */
+  border-radius: 8px; /* Bordas arredondadas para a imagem */
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1); /* Sombra suave para a imagem */
 }
-
 
 /* === BOTÃO === */
+
+/* Estilo para o botão com a classe "botao-conhecer" */
 .botao-conhecer {
-  display: inline-block;
-  background-color: #4CAF50;
-  color: white;
-  padding: 0.75rem 1.5rem;
-  border-radius: 6px;
-  text-decoration: none;
-  transition: background-color 0.3s ease;
-  margin-top: 1rem;
+  display: inline-block; /* Torna o botão um elemento de bloco em linha */
+  background-color: #4CAF50; /* Cor de fundo verde */
+  color: white; /* Cor do texto branco */
+  padding: 0.75rem 1.5rem; /* Espaçamento interno */
+  border-radius: 6px; /* Bordas arredondadas */
+  text-decoration: none; /* Remove o sublinhado do link */
+  transition: background-color 0.3s ease; /* Transição suave de cor de fundo */
+  margin-top: 1rem; /* Espaçamento superior */
 }
 
+/* Efeito de hover para o botão "botao-conhecer" */
 .botao-conhecer:hover {
-  background-color: #388e3c;
+  background-color: #388e3c; /* Cor mais escura quando o botão é clicado */
 }
 
 /* === RODAPÉ === */
+
+/* Estilo para a logo no rodapé */
 .footer-logo {
-  width: 2rem;
-  height: auto;
+  width: 2rem; /* Largura da logo */
+  height: auto; /* Altura proporcional */
 }
 
+/* Estilo para o texto no rodapé */
 .footer-text {
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  font-style: italic;
-  font-size: small;
+  font-family: Verdana, Geneva, Tahoma, sans-serif; /* Fonte sem serifa e legível */
+  font-style: italic; /* Estilo itálico */
+  font-size: small; /* Tamanho de fonte pequeno */
 }
 
 /* === ÍCONES SOCIAIS === */
+
+/* Estilo para o container dos ícones sociais */
 .social-icons {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 12px;
-  flex-wrap: wrap;
-  margin-top: 1rem;
+  display: flex; /* Layout flexível */
+  justify-content: center; /* Centraliza os ícones horizontalmente */
+  align-items: center; /* Centraliza os ícones verticalmente */
+  gap: 12px; /* Espaço de 12px entre os ícones */
+  flex-wrap: wrap; /* Permite quebra de linha para os ícones */
+  margin-top: 1rem; /* Espaço superior de 1rem */
 }
 
+/* Estilo para os ícones sociais individuais */
 .social-icon {
-  width: 2rem;
-  transition: transform 0.2s ease-in-out;
+  width: 2rem; /* Tamanho fixo dos ícones */
+  transition: transform 0.2s ease-in-out; /* Transição suave ao aplicar transformações */
 }
 
+/* Efeito de hover nos ícones sociais */
 .social-icon:hover {
-  transform: scale(1.1);
+  transform: scale(1.1); /* Aumenta o tamanho do ícone ao passar o mouse */
 }

@@ -81,6 +81,10 @@ article {
   flex-grow: 1; /* ocupa o espaço restante do card */
 }
 
+.card-img-top{
+  max-height: 11rem;
+}
+
 /* --- Rodapé (Footer) --- */
 
 /* Container dos ícones sociais */
