@@ -29,31 +29,32 @@ main {
 
 /* Estilo para a caixa de informações ao lado do formulário */
 .info-box {
-  background-color: rgba(255, 255, 255, 0.9);
-  border: 1px solid #e0e0e0;
-  border-radius: 10px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
-  padding: 2rem;
-  width: 25rem;
-  height: auto;
-  text-align: center;
+  background-color: rgba(255, 255, 255, 0.9); /* Fundo branco com 90% de opacidade */
+  border: 1px solid #e0e0e0; /* Borda cinza clara de 1 pixel */
+  border-radius: 10px; /* Cantos arredondados de 10 pixels */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05); /* Sombra leve para profundidade */
+  padding: 2rem; /* Espaçamento interno de 2rem em todos os lados */
+  width: 25rem; /* Largura fixa de 25rem */
+  height: auto; /* Altura automática, ajusta conforme o conteúdo */
+  text-align: center; /* Centraliza o texto dentro da caixa */
 }
 
 .info-box h4 {
-  color: #005014;
-  margin-bottom: 1rem;
-  font-weight: bold 600;
+  color: #005014; /* Cor verde escura para o título */
+  margin-bottom: 1rem; /* Espaço inferior de 1rem abaixo do título */
+  font-weight: bold; /* Valor incorreto – veja observação abaixo */
 }
 
 .info-box p {
-  color: #333;
-  line-height: 1.6;
-  font-size: 1rem;
+  color: #333; /* Cor do texto em cinza escuro */
+  line-height: 1.6; /* Espaçamento entre linhas mais confortável */
+  font-size: 1rem; /* Tamanho da fonte padrão (geralmente 16px) */
 }
 
-.data-hora{
-  font-weight:bold;
+.data-hora {
+  font-weight: bold; /* Deixa o texto com essa classe em negrito */
 }
+
 
 /* Ajuste responsivo para empilhar em telas pequenas */
 @media (max-width: 768px) {
