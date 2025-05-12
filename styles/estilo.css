@@ -1,6 +1,5 @@
-/* ===============================
-   Banner topo da página inicial
-   =============================== */
+/*Banner topo da página inicial*/
+  
    #banner-home {
     position: relative; /* Permite posicionar elementos filhos de forma absoluta em relação a este */
     width: 100%; /* Ocupa toda a largura do container pai */
@@ -48,25 +47,8 @@
     background: #45a049; /* Tom mais escuro no hover */
   }
   
-  /* Responsividade do banner */
-  @media (max-width: 768px) {
-    .banner-content h2 {
-      font-size: 1.5rem; /* Título menor em telas pequenas */
-    }
-  
-    .banner-content {
-      padding: 1rem; /* Reduz o padding */
-    }
-  
-    .banner-content a {
-      padding: 0.5rem 1rem; /* Botão menor */
-      font-size: 0.9rem; /* Fonte um pouco menor */
-    }
-  }
-  
-  /* ===============================
-     Seção de conteúdo principal
-     =============================== */
+  /*Seção de conteúdo principal*/
+
   #conteudo-col-2 {
     display: flex; /* Layout em linha com flexbox */
     flex-wrap: wrap; /* Permite quebrar para nova linha em telas menores */
@@ -105,9 +87,7 @@
     background-color: #45a049; /* Cor levemente mais escura ao passar o mouse */
   }
   
-  /* ===============================
-     Bloco do cálculo de IMC
-     =============================== */
+  /*Bloco do cálculo de IMC*/
   .container-imc {
     flex: 1 1 300px; /* Cresce, encolhe, base de 300px */
     position: relative; /* Para posicionar o ::before corretamente */
@@ -158,9 +138,7 @@
     margin-top: 1rem; /* Espaço acima do resultado */
   }
   
-  /* ===============================
-     Botão de agendamento
-     =============================== */
+  /* Botão de agendamento */
   #botaoAgendamento {
     margin-top: 20px; /* Espaçamento superior */
     text-align: center; /* Centraliza o botão */
@@ -183,9 +161,7 @@
     transform: translateY(-2px); /* Efeito de "subir" o botão */
   }
   
-  /* ===============================
-     Rodapé com redes sociais
-     =============================== */
+  /* Rodapé com redes sociais */
   .social-icons {
     display: flex; /* Layout flexível */
     justify-content: center; /* Centraliza horizontalmente */
