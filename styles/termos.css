@@ -1,0 +1,90 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Define a fonte Arial, ou uma genérica sans-serif caso a primeira não esteja disponível */
+    margin: 0; /* Remove a margem padrão do navegador */
+    padding: 0; /* Remove o padding padrão do navegador */
+    background-color: #f8f9fa; /* Define a cor de fundo da página */
+    color: #333; /* Cor do texto como um cinza escuro para contraste */
+}
+
+.container {
+    max-width: 900px; /* Limita a largura máxima para 900px */
+    margin: auto; /* margem auto*/
+    padding: 2rem; /* Espaçamento interno de 2rem */
+    background: #fff; /* Define a cor de background como branco*/
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.05); /*Sombra leve na caixa*/
+    border-radius: 10px; /* Arredonda a borda*/
+    margin-top: 2rem; /* Adiciona uma margem de 2 rem acima do elemento. */
+    margin-bottom: 2rem; /* Adiciona uma margem de 2 rem abaixo do elemento. */
+}
+
+h1,
+h2 {
+    color: #2d6a4f;/*cor dos titulos em verde*/
+    margin-bottom: 0.5rem; /* Adiciona uma margem de 2 rem abaixo do elemento. */
+}
+
+h1 {
+    text-align: center; /* Alinha o texto do titulo ao centro*/
+    font-size: 2rem; /*Tamanho da fonte do titulo*/
+}
+
+p {
+    line-height: 1.6; /* Define a altura da linha para melhorar a legibilidade do texto. */
+    margin-bottom: 1rem; /* Adiciona espaçamento abaixo de cada parágrafo. */
+}
+
+.section {
+    margin-top: 2rem; /* Cria um espaço acima da seção para separá-la visualmente de outros elementos. */
+}
+
+.icon-title {
+    display: flex; /* Exibe os elementos filhos em linha, como um flex container. */
+    align-items: center; /* Alinha verticalmente os itens ao centro. */
+    gap: 0.5rem; /* Espaço entre o ícone e o texto. */
+    font-size: 1.25rem; /* Define o tamanho da fonte para o título. */
+    color: #2d6a4f; /* Cor do texto (verde escuro). */
+    margin-bottom: 0.5rem; /* Espaço abaixo do título. */
+}
+
+.contact {
+    margin-top: 2rem; /* Espaço acima da seção de contato. */
+    background-color: #f1f1f1; /* Cor de fundo cinza-claro para destaque. */
+    padding: 1rem; /* Espaçamento interno (acolchoamento) ao redor do conteúdo. */
+    border-radius: 8px; /* Bordas arredondadas para um visual suave. */
+}
+
+.contact i {
+    color: #2d6a4f; /* Cor do ícone (verde escuro). */
+    margin-right: 0.5rem; /* Espaço entre o ícone e o texto ao lado. */
+}
+
+/* Rodapé com redes sociais */
+.social-icons {
+    display: flex; /* Layout flexível */
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
+    gap: 12px; /* Espaçamento entre ícones */
+    flex-wrap: wrap; /* Permite quebra de linha */
+    margin-top: 1rem; /* Espaço superior */
+  }
+  
+  .social-icon {
+    width: 2rem; /* Tamanho dos ícones */
+    height: auto; /* Altura proporcional */
+    transition: transform 0.2s ease-in-out; /* Transição suave */
+  }
+  
+  .social-icon:hover {
+    transform: scale(1.1); /* Aumenta ligeiramente ao passar o mouse */
+  }
+  
+  .footer-logo {
+    width: 2rem; /* Largura da logo */
+    height: auto; /* Altura proporcional */
+  }
+  
+  .footer-text {
+    font-family: Verdana, Geneva, Tahoma, sans-serif; /* Fonte legível e sem serifa */
+    font-style: italic; /* Estilo itálico */
+    font-size: small; /* Tamanho pequeno */
+  }
