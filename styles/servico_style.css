@@ -96,40 +96,4 @@ main {
   background-color: #388e3c; /* Cor mais escura quando o botão é clicado */
 }
 
-/*  RODAPÉ  */
 
-/* Estilo para a logo no rodapé */
-.footer-logo {
-  width: 2rem; /* Largura da logo */
-  height: auto; /* Altura proporcional */
-}
-
-/* Estilo para o texto no rodapé */
-.footer-text {
-  font-family: Verdana, Geneva, Tahoma, sans-serif; /* Fonte sem serifa e legível */
-  font-style: italic; /* Estilo itálico */
-  font-size: small; /* Tamanho de fonte pequeno */
-}
-
-/*  ÍCONES SOCIAIS  */
-
-/* Estilo para o container dos ícones sociais */
-.social-icons {
-  display: flex; /* Layout flexível */
-  justify-content: center; /* Centraliza os ícones horizontalmente */
-  align-items: center; /* Centraliza os ícones verticalmente */
-  gap: 12px; /* Espaço de 12px entre os ícones */
-  flex-wrap: wrap; /* Permite quebra de linha para os ícones */
-  margin-top: 1rem; /* Espaço superior de 1rem */
-}
-
-/* Estilo para os ícones sociais individuais */
-.social-icon {
-  width: 2rem; /* Tamanho fixo dos ícones */
-  transition: transform 0.2s ease-in-out; /* Transição suave ao aplicar transformações */
-}
-
-/* Efeito de hover nos ícones sociais */
-.social-icon:hover {
-  transform: scale(1.1); /* Aumenta o tamanho do ícone ao passar o mouse */
-}

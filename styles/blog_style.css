@@ -85,39 +85,4 @@ article {
   max-height: 11rem;
 }
 
-/*  Rodapé (Footer) */
 
-/* Container dos ícones sociais */
-.social-icons {
-  display: flex; /* usa flexbox para alinhar os ícones */
-  justify-content: center; /* centraliza os ícones na horizontal */
-  align-items: center; /* alinha os ícones verticalmente */
-  gap: 12px; /* espaçamento entre os ícones */
-  flex-wrap: wrap; /* permite quebra de linha em telas menores */
-  margin-top: 1rem; /* espaço superior */
-}
-
-/* Estilo individual dos ícones sociais */
-.social-icon {
-  width: 2rem; /* largura fixa */
-  height: auto; /* altura proporcional */
-  transition: transform 0.2s ease-in-out; /* animação suave no hover */
-}
-
-/* Efeito ao passar o mouse sobre o ícone */
-.social-icon:hover {
-  transform: scale(1.1); /* aumenta levemente o tamanho do ícone */
-}
-
-/* Estilo do logo no rodapé */
-.footer-logo {
-  width: 2rem; /* largura fixa */
-  height: auto; /* altura proporcional */
-}
-
-/* Estilo do texto no rodapé */
-.footer-text {
-  font-family: Verdana, Geneva, Tahoma, sans-serif; /* fonte sem serifa */
-  font-style: italic; /* estilo itálico */
-  font-size: small; /* tamanho pequeno */
-}

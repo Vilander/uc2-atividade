@@ -161,34 +161,5 @@
     transform: translateY(-2px); /* Efeito de "subir" o botão */
   }
   
-  /* Rodapé com redes sociais */
-  .social-icons {
-    display: flex; /* Layout flexível */
-    justify-content: center; /* Centraliza horizontalmente */
-    align-items: center; /* Centraliza verticalmente */
-    gap: 12px; /* Espaçamento entre ícones */
-    flex-wrap: wrap; /* Permite quebra de linha */
-    margin-top: 1rem; /* Espaço superior */
-  }
   
-  .social-icon {
-    width: 2rem; /* Tamanho dos ícones */
-    height: auto; /* Altura proporcional */
-    transition: transform 0.2s ease-in-out; /* Transição suave */
-  }
-  
-  .social-icon:hover {
-    transform: scale(1.1); /* Aumenta ligeiramente ao passar o mouse */
-  }
-  
-  .footer-logo {
-    width: 2rem; /* Largura da logo */
-    height: auto; /* Altura proporcional */
-  }
-  
-  .footer-text {
-    font-family: Verdana, Geneva, Tahoma, sans-serif; /* Fonte legível e sem serifa */
-    font-style: italic; /* Estilo itálico */
-    font-size: small; /* Tamanho pequeno */
-  }
   

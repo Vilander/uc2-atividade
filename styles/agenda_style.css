@@ -54,38 +54,3 @@ main {
 .data-hora {
   font-weight: bold; /* Deixa o texto com essa classe em negrito */
 }
-
-/* Container dos ícones sociais */
-.social-icons {
-  display: flex; /* Layout flexível */
-  justify-content: center; /* Centraliza os ícones horizontalmente */
-  align-items: center; /* Alinha verticalmente */
-  gap: 12px; /* Espaçamento entre os ícones */
-  flex-wrap: wrap; /* Permite quebra de linha em telas pequenas */
-  margin-top: 1rem; /* Espaço acima do grupo de ícones */
-}
-
-/* Ícones sociais individuais */
-.social-icon {
-  width: 2rem; /* Largura fixa */
-  height: auto; /* Altura proporcional */
-  transition: transform 0.2s ease-in-out; /* Animação suave ao interagir */
-}
-
-.social-icon:hover {
-  transform: scale(1.1); /* Aumenta o ícone ao passar o mouse */
-}
-
-/* Logo no rodapé */
-.footer-logo {
-  width: 2rem; /* Tamanho da logo */
-  height: auto;
-}
-
-/* Texto no rodapé */
-.footer-text {
-  font-family: Verdana, Geneva, Tahoma, sans-serif; /* Fonte legível */
-  font-style: italic; /* Estilo itálico */
-  font-size: small; /* Tamanho de fonte pequeno */
-}
-
