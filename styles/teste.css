@@ -33,11 +33,6 @@ img{
     height: 200px;
 }
 
-.perfil{
-    width: 500px;
-    height: 600px;
-}
-
 .card{
   background-color: #ffffff; 
   border: 1px solid #e0e0e0; 
@@ -50,4 +45,14 @@ img{
   margin: 0 3px; 
   padding: 1.5rem;
   box-sizing: border-box;
+  text-align: center;
+}
+
+.content{
+    position: absolute;
+    display: flex;
+    align-items:center;
+    padding: 1rem;
+    margin: 0 auto;
+    max-width: 1500px;
 }
