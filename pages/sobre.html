@@ -1,107 +1,129 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Vida Ativa</title>
-    <link rel="stylesheet" href="/styles/about_style.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
-    <link rel="stylesheet" href="/src/icons/fontawesome5.9.0/css/all.css" />
-    <link rel="stylesheet" href="/src/css/default.css" />
-    <link rel="stylesheet" href="/src/css/asb.css" />
-    
-    
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Vida Ativa</title>
+  <link rel="stylesheet" href="/styles/about_style.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+  <link rel="stylesheet" href="/src/icons/fontawesome5.9.0/css/all.css" />
+  <link rel="stylesheet" href="/src/css/default.css" />
+  <link rel="stylesheet" href="/src/css/asb.css" />
+
+
 </head>
 
 <body>
-    <header>
-      <div id="menu"></div>
-      <script>
-        fetch('menu_int.html')
-          .then(response => response.text())
-          .then(data => {
-            document.getElementById('menu').innerHTML = data;
-          })
-          .catch(error => console.error('ERRO AO CARREGAR O MENU:', error));
-      </script> 
-    </header>
+  <header>
+    <div id="menu"></div>
+    <script>
+      fetch('menu_int.html')
+        .then(response => response.text())
+        .then(data => {
+          document.getElementById('menu').innerHTML = data;
+        })
+        .catch(error => console.error('ERRO AO CARREGAR O MENU:', error));
+    </script>
+  </header>
 
-    <main>
-      <h1 class="titulo-topo">Sobre Nós</h1>
-    
-      <section class="area-sobre">
-        <div class="caixa-branca">
-          <a class="service-imagem" href="/pages/agendamento.html">
-            <img src="/assets/equipe.webp" alt="equipe clínica vida ativa">
-          </a>
-    
-          <div class="conteudo-centralizado">
-            <section id="servicos">
-              <p class="chamada-clinica">
-                Na <strong>Clínica Vida Ativa</strong>, acreditamos que movimento é vida. Somos uma clínica especializada em fisioterapia, pilates e reabilitação, voltada para adultos e idosos que buscam mais qualidade de vida, autonomia e bem-estar. Nosso foco está na prevenção, no tratamento humanizado e na reabilitação eficaz, sempre com atenção integral às necessidades de cada paciente.
+  <main>
+    <h1 class="titulo-topo">Sobre Nós</h1>
 
-                Com um ambiente acolhedor, moderno e tranquilo, oferecemos serviços de fisioterapia ortopédica, fisioterapia respiratória, pilates solo, pilates com aparelhos e massagens terapêuticas. Cada detalhe do nosso espaço foi pensado para proporcionar conforto, segurança e resultados reais.
-                
-                Nosso diferencial está na união entre conhecimento técnico e cuidado humano. Aqui, você é atendido por especialistas comprometidos com a sua saúde.
-              </p>
-    
-              <h2 class="titulo-segundo">Conheça nossa equipe!</h2>
-    
-              <div class="equipe">
-                <div class="membro">
-                  <img class="perfil" src="/assets/mariana.webp" alt="doutora mariana">
-                  <p><strong>Dra. Mariana Ferraz</strong> – Nutricionista clínica e especialista em fisioterapia preventiva. Com mais de 15 anos de experiência, Mariana é referência em programas de reeducação alimentar e reabilitação de pacientes com doenças crônicas. Sua abordagem acolhedora inspira confiança e resultados duradouros. </p>
-                </div>
-                <div class="membro">
-                  <img class="perfil" src="/assets/leticia.webp" alt="doutora leticia">
-                  <p><strong>Dra. Letícia Moura</strong> – Nutricionista esportiva e instrutora de Pilates. Letícia alia conhecimento técnico com sensibilidade no atendimento, desenvolvendo planos personalizados para quem busca mais energia e mobilidade no dia a dia. É apaixonada por promover saúde de forma leve e sustentável.</p>
-                </div>
-                <div class="membro">
-                  <img class="perfil" src="/assets/rafael.webp" alt="doutor rafael">
-                  <p><strong>Dr. Rafael Andrade</strong> – Nutricionista funcional e fisioterapeuta respiratório. Rafael é especialista em saúde integral e atua na promoção da longevidade com foco na prevenção de lesões e fortalecimento do sistema respiratório. Seu trabalho é reconhecido pela seriedade e pelos ótimos resultados clínicos.</p>
-                </div>
-                <p class="fundadores">
-                  Juntos, eles fundaram a Clínica Vida Ativa com o propósito de transformar vidas por meio do movimento, da escuta ativa e da ciência aplicada ao cuidado diário.
-                </p>
+    <section class="area-sobre">
+      <div class="caixa-branca">
+        <a class="service-imagem" href="/pages/agendamento.html">
+          <img src="/assets/equipe.webp" alt="equipe clínica vida ativa">
+        </a>
+
+        <div class="conteudo-centralizado">
+          <section id="servicos">
+            <p class="chamada-clinica">
+              Na <strong>Clínica Vida Ativa</strong>, acreditamos que movimento é vida. Somos uma clínica especializada
+              em fisioterapia, pilates e reabilitação, voltada para adultos e idosos que buscam mais qualidade de vida,
+              autonomia e bem-estar. Nosso foco está na prevenção, no tratamento humanizado e na reabilitação eficaz,
+              sempre com atenção integral às necessidades de cada paciente.
+
+              Com um ambiente acolhedor, moderno e tranquilo, oferecemos serviços de fisioterapia ortopédica,
+              fisioterapia respiratória, pilates solo, pilates com aparelhos e massagens terapêuticas. Cada detalhe do
+              nosso espaço foi pensado para proporcionar conforto, segurança e resultados reais.
+
+              Nosso diferencial está na união entre conhecimento técnico e cuidado humano. Aqui, você é atendido por
+              especialistas comprometidos com a sua saúde.
+            </p>
+
+            <h2 class="titulo-segundo">Conheça nossa equipe!</h2>
+
+            <div class="equipe">
+              <div class="membro">
+                <img class="perfil" src="/assets/mariana.webp" alt="doutora mariana">
+                <p><strong>Dra. Mariana Ferraz</strong> – Nutricionista clínica e especialista em fisioterapia
+                  preventiva. Com mais de 15 anos de experiência, Mariana é referência em programas de reeducação
+                  alimentar e reabilitação de pacientes com doenças crônicas. Sua abordagem acolhedora inspira confiança
+                  e resultados duradouros. </p>
               </div>
-    
-              <h3 class="titulo-terceiro">Missão, Visão e Valores:</h3>
-              <ul class="missao-visao-valor">
-                <li><strong class="destaque-mvp">Missão:</strong> Promover saúde, mobilidade e bem-estar com excelência e humanização, oferecendo tratamentos personalizados em fisioterapia, pilates e reabilitação para adultos e idosos.</li><br>
-                <li><strong class="destaque-mvp">Visão:</strong> Ser referência regional em fisioterapia e bem-estar, reconhecida pela qualidade no atendimento, inovação nos métodos terapêuticos e impacto positivo na qualidade de vida dos nossos pacientes.</li><br>
-                <li>
-                  <strong class="destaque-mvp">Valores:</strong>
-                  <ul class="valores-lista">
-                    <li>Cuidado Humanizado: Atendemos com empatia, escuta ativa e respeito às necessidades individuais.</li>
-                    <li>Excelência Profissional: Investimos continuamente em formação técnica e inovação.</li>
-                    <li>Comprometimento: Estamos ao lado do paciente em cada etapa do tratamento.</li>
-                    <li>Ética e Transparência: Atuamos com responsabilidade e honestidade em todas as relações.</li>
-                    <li>Bem-Estar Integral: Valorizamos o equilíbrio entre corpo, mente e estilo de vida.</li>
-                  </ul>
-                </li>
-              </ul>
-    
-              <p class="cta"><strong><i>Agende sua sessão e dê o primeiro passo para uma vida verdadeiramente saudável!</i></strong></p>
-            </section>
-    
-            <a href="/pages/agendamento.html" class="botao-conhecer">Agende agora seu horário</a>
-          </div>
+              <div class="membro">
+                <img class="perfil" src="/assets/leticia.webp" alt="doutora leticia">
+                <p><strong>Dra. Letícia Moura</strong> – Nutricionista esportiva e instrutora de Pilates. Letícia alia
+                  conhecimento técnico com sensibilidade no atendimento, desenvolvendo planos personalizados para quem
+                  busca mais energia e mobilidade no dia a dia. É apaixonada por promover saúde de forma leve e
+                  sustentável.</p>
+              </div>
+              <div class="membro">
+                <img class="perfil" src="/assets/rafael.webp" alt="doutor rafael">
+                <p><strong>Dr. Rafael Andrade</strong> – Nutricionista funcional e fisioterapeuta respiratório. Rafael é
+                  especialista em saúde integral e atua na promoção da longevidade com foco na prevenção de lesões e
+                  fortalecimento do sistema respiratório. Seu trabalho é reconhecido pela seriedade e pelos ótimos
+                  resultados clínicos.</p>
+              </div>
+              <p class="fundadores">
+                Juntos, eles fundaram a Clínica Vida Ativa com o propósito de transformar vidas por meio do movimento,
+                da escuta ativa e da ciência aplicada ao cuidado diário.
+              </p>
+            </div>
+
+            <h3 class="titulo-terceiro">Missão, Visão e Valores:</h3>
+            <ul class="missao-visao-valor">
+              <li><strong class="destaque-mvp">Missão:</strong> Promover saúde, mobilidade e bem-estar com excelência e
+                humanização, oferecendo tratamentos personalizados em fisioterapia, pilates e reabilitação para adultos
+                e idosos.</li><br>
+              <li><strong class="destaque-mvp">Visão:</strong> Ser referência regional em fisioterapia e bem-estar,
+                reconhecida pela qualidade no atendimento, inovação nos métodos terapêuticos e impacto positivo na
+                qualidade de vida dos nossos pacientes.</li><br>
+              <li>
+                <strong class="destaque-mvp">Valores:</strong>
+                <ul class="valores-lista">
+                  <li>Cuidado Humanizado: Atendemos com empatia, escuta ativa e respeito às necessidades individuais.
+                  </li>
+                  <li>Excelência Profissional: Investimos continuamente em formação técnica e inovação.</li>
+                  <li>Comprometimento: Estamos ao lado do paciente em cada etapa do tratamento.</li>
+                  <li>Ética e Transparência: Atuamos com responsabilidade e honestidade em todas as relações.</li>
+                  <li>Bem-Estar Integral: Valorizamos o equilíbrio entre corpo, mente e estilo de vida.</li>
+                </ul>
+              </li>
+            </ul>
+
+            <p class="cta"><strong><i>Agende sua sessão e dê o primeiro passo para uma vida verdadeiramente
+                  saudável!</i></strong></p>
+          </section>
+
+          <a href="/pages/agendamento.html" class="botao-conhecer">Agende agora seu horário</a>
         </div>
-      </section>
-    
-     <!--Acessibilidade-->
-    <script
-    type="text/javascript"
-    src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"
-    ></script>
+      </div>
+    </section>
+
+    <!--Acessibilidade-->
+    <script type="text/javascript"
+      src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
     <script type="text/javascript" src="/src/js/asb.js"></script>
-    
 
-    </main>
-   
 
-    <footer>
+  </main>
+
+
+  <footer>
     <div id="rodape"></div>
     <script>
       fetch('/pages/rodape.html')
@@ -111,8 +133,10 @@
         })
         .catch(error => console.error('ERRO AO CARREGAR O RODAPE:', error));
     </script>
-    </footer>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous"></script>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq"
+    crossorigin="anonymous"></script>
 </body>
 
 </html>

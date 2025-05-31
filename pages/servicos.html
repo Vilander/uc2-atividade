@@ -1,101 +1,112 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Vida Ativa</title>
-    <link rel="stylesheet" href="/styles/servico_style.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
-    <link rel="stylesheet" href="/src/icons/fontawesome5.9.0/css/all.css" />
-    <link rel="stylesheet" href="/src/css/default.css" />
-    <link rel="stylesheet" href="/src/css/asb.css" />
-    <!-- -->
-    
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Vida Ativa</title>
+  <link rel="stylesheet" href="/styles/servico_style.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+  <link rel="stylesheet" href="/src/icons/fontawesome5.9.0/css/all.css" />
+  <link rel="stylesheet" href="/src/css/default.css" />
+  <link rel="stylesheet" href="/src/css/asb.css" />
+  <!-- -->
+
 </head>
 
 <body>
-    <header>
-      <div id="menu"></div>
-      <script>
-        fetch('menu_int.html')
-          .then(response => response.text())
-          .then(data => {
-            document.getElementById('menu').innerHTML = data;
-          })
-          .catch(error => console.error('ERRO AO CARREGAR O MENU:', error));
-      </script> 
-    </header>
-    <main>
-      <h1 style="text-align: center; padding-top: 15px; color: #1a5717c9;"> Conheça Nossos Serviços:</h1>
-      
-<section id="conteudo-col-2">
+  <header>
+    <div id="menu"></div>
+    <script>
+      fetch('menu_int.html')
+        .then(response => response.text())
+        .then(data => {
+          document.getElementById('menu').innerHTML = data;
+        })
+        .catch(error => console.error('ERRO AO CARREGAR O MENU:', error));
+    </script>
+  </header>
+  <main>
+    <h1 style="text-align: center; padding-top: 15px; color: #1a5717c9;"> Conheça Nossos Serviços:</h1>
 
-  
-  <div class="caixa-creme">
-    <a class ="service-imagem" href="/pages/agendamento.html"><img src="/assets/nutrictonService.webp" alt="profissional de nutricao fazendo agendamento"></a>
-  
-    <div class="conteudo-centralizado">
-      <section id="servicos">
-        <h2></h2>
-        <p>
-          Na <strong id="black-green">Clínica Vida Ativa</strong>, oferecemos um atendimento completo e personalizado para quem busca mais saúde, mobilidade e bem-estar.
-          Atendemos <strong>adultos e idosos</strong> com foco na prevenção de lesões, alívio de dores crônicas e reabilitação funcional — sempre com
-          atenção humanizada e profissionais altamente especializados.
-        </p>
-    
-        <p>
-          Você pode escolher entre duas modalidades de atendimento, conforme sua preferência ou necessidade:
-        </p>
-    
-        <ul class="modalidades">
-          <li><strong>Presencial:</strong> em nosso espaço moderno, acolhedor e equipado, localizado em uma região de fácil acesso.</li>
-          <li><strong>On-line:</strong> sessões personalizadas realizadas por vídeo, com toda a orientação profissional que você precisa no conforto da sua casa.</li>
-        </ul>
-    
-        <h3>Conheça nossos principais serviços:</h3>
-    
-        <ul class="servicos-lista">
-          <li>
-            <strong>Fisioterapia Ortopédica</strong><br>
-            Tratamento de dores e lesões musculoesqueléticas, como lombalgias, tendinites, entorses e pós-operatórios.
-          </li>
-          <li>
-            <strong>Fisioterapia Respiratória</strong><br>
-            Indicado para pessoas com doenças respiratórias ou que precisam fortalecer a função pulmonar, especialmente idosos.
-          </li>
-          <li>
-            <strong>Pilates Solo e com Aparelhos</strong><br>
-            Aprimoramento da postura, força, equilíbrio e flexibilidade com foco na individualidade de cada paciente.
-          </li>
-          <li>
-            <strong>Massagens Terapêuticas</strong><br>
-            Redução do estresse, alívio de tensões musculares e melhora da circulação com técnicas relaxantes e terapêuticas.
-          </li>
-        </ul>
-    
-        <p>
-          Todos os atendimentos, seja no formato <strong>presencial</strong> ou <strong>on-line</strong>, são realizados com dedicação, segurança e compromisso com sua qualidade de vida.
-        </p>
-    
-        <p class="cta"><strong>Agende agora mesmo sua sessão</strong> e dê o primeiro passo para uma vida mais ativa e equilibrada!</p>
-      </section>
-      
-      <a href="/pages/agendamento.html" class="botao-conhecer">Agende agora seu horário</a>
-    </div>
-  </div>
+    <section id="conteudo-col-2">
 
-     <!--Acessibilidade-->
-     <script
-     type="text/javascript"
-     src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"
-     ></script>
-     <script type="text/javascript" src="/src/js/asb.js"></script>
 
-  
-    </main>
-    <footer>
-      <div id="rodape"></div>
+      <div class="caixa-creme">
+        <a class="service-imagem" href="/pages/agendamento.html"><img src="/assets/nutrictonService.webp"
+            alt="profissional de nutricao fazendo agendamento"></a>
+
+        <div class="conteudo-centralizado">
+          <section id="servicos">
+            <h2></h2>
+            <p>
+              Na <strong id="black-green">Clínica Vida Ativa</strong>, oferecemos um atendimento completo e
+              personalizado para quem busca mais saúde, mobilidade e bem-estar.
+              Atendemos <strong>adultos e idosos</strong> com foco na prevenção de lesões, alívio de dores crônicas e
+              reabilitação funcional — sempre com
+              atenção humanizada e profissionais altamente especializados.
+            </p>
+
+            <p>
+              Você pode escolher entre duas modalidades de atendimento, conforme sua preferência ou necessidade:
+            </p>
+
+            <ul class="modalidades">
+              <li><strong>Presencial:</strong> em nosso espaço moderno, acolhedor e equipado, localizado em uma região
+                de fácil acesso.</li>
+              <li><strong>On-line:</strong> sessões personalizadas realizadas por vídeo, com toda a orientação
+                profissional que você precisa no conforto da sua casa.</li>
+            </ul>
+
+            <h3>Conheça nossos principais serviços:</h3>
+
+            <ul class="servicos-lista">
+              <li>
+                <strong>Fisioterapia Ortopédica</strong><br>
+                Tratamento de dores e lesões musculoesqueléticas, como lombalgias, tendinites, entorses e
+                pós-operatórios.
+              </li>
+              <li>
+                <strong>Fisioterapia Respiratória</strong><br>
+                Indicado para pessoas com doenças respiratórias ou que precisam fortalecer a função pulmonar,
+                especialmente idosos.
+              </li>
+              <li>
+                <strong>Pilates Solo e com Aparelhos</strong><br>
+                Aprimoramento da postura, força, equilíbrio e flexibilidade com foco na individualidade de cada
+                paciente.
+              </li>
+              <li>
+                <strong>Massagens Terapêuticas</strong><br>
+                Redução do estresse, alívio de tensões musculares e melhora da circulação com técnicas relaxantes e
+                terapêuticas.
+              </li>
+            </ul>
+
+            <p>
+              Todos os atendimentos, seja no formato <strong>presencial</strong> ou <strong>on-line</strong>, são
+              realizados com dedicação, segurança e compromisso com sua qualidade de vida.
+            </p>
+
+            <p class="cta"><strong>Agende agora mesmo sua sessão</strong> e dê o primeiro passo para uma vida mais ativa
+              e equilibrada!</p>
+          </section>
+
+          <a href="/pages/agendamento.html" class="botao-conhecer">Agende agora seu horário</a>
+        </div>
+      </div>
+
+      <!--Acessibilidade-->
+      <script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
+      <script type="text/javascript" src="/src/js/asb.js"></script>
+
+
+  </main>
+  <footer>
+    <div id="rodape"></div>
     <script>
       fetch('/pages/rodape.html')
         .then(response => response.text())
@@ -104,8 +115,10 @@
         })
         .catch(error => console.error('ERRO AO CARREGAR O RODAPE:', error));
     </script>
-    </footer>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous"></script>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq"
+    crossorigin="anonymous"></script>
 </body>
 
 </html>

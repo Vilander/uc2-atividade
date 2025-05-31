@@ -1,202 +1,164 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Vida Ativa</title>
-    <link rel="stylesheet" href="/styles/blog_style.css"/>
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7"
-      crossorigin="anonymous"
-    />
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Vida Ativa</title>
+  <link rel="stylesheet" href="/styles/blog_style.css" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous" />
   <link rel="stylesheet" href="/src/icons/fontawesome5.9.0/css/all.css" />
   <link rel="stylesheet" href="/src/css/default.css" />
   <link rel="stylesheet" href="/src/css/asb.css" />
-  </head>
+</head>
 
-  <body>
-    <header>
-      <div id="menu"></div>
-      <script>
-        fetch('menu_int.html')
-          .then(response => response.text())
-          .then(data => {
-            document.getElementById('menu').innerHTML = data;
-          })
-          .catch(error => console.error('ERRO AO CARREGAR O MENU:', error));
-      </script> 
-    </header>
-    <main>
-      <section>
-        <div id="carouselExampleDark" class="carousel carousel-dark slide">
-          <div class="carousel-indicators">
-            <button
-              type="button"
-              data-bs-target="#carouselExampleDark"
-              data-bs-slide-to="0"
-              class="active"
-              aria-current="true"
-              aria-label="Slide 1"
-            ></button>
-            <button
-              type="button"
-              data-bs-target="#carouselExampleDark"
-              data-bs-slide-to="1"
-              aria-label="Slide 2"
-            ></button>
-            <button
-              type="button"
-              data-bs-target="#carouselExampleDark"
-              data-bs-slide-to="2"
-              aria-label="Slide 3"
-            ></button>
-          </div>
-          <div class="carousel-inner">
-            <div class="carousel-item active" data-bs-interval="10000">
-              <img
-                src="/assets/ozempic_carrossel.webp"
-                class="d-block w-100"
-                alt="..."
-              />
-              <div class="carousel-caption custom-caption d-none d-md-block">
-                <h5>OS RISCOS DO OZEMPIC</h5>
-                <p>
-                  Saiba as consequências da medicação que se popularizou entre a
-                  população... <i>saiba mais</i>
-                </p>
-              </div>
-            </div>
-            <div class="carousel-item" data-bs-interval="2000">
-              <img src="/assets/yoga.webp" class="d-block w-100" alt="..." />
-              <div class="carousel-caption custom-caption d-none d-md-block">
-                <h5>Yoga</h5>
-                <p>Conheça os benefícios para a saúde...<i>saiba mais</i></p>
-              </div>
-            </div>
-            <div class="carousel-item">
-              <img
-                src="/assets/terceiraidade.webp"
-                class="d-block w-100"
-                alt="..."
-              />
-              <div class="carousel-caption custom-caption d-none d-md-block">
-                <h5>Hábitos saudáveis na terceira idade</h5>
-                <p>
-                  Veja o depoimento de clientes que mudaram sua vida com a
-                  consultoria da Vida Ativa...<i>saiba mais</i>
-                </p>
-              </div>
-            </div>
-          </div>
-          <button
-            class="carousel-control-prev"
-            type="button"
-            data-bs-target="#carouselExampleDark"
-            data-bs-slide="prev"
-          >
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-          </button>
-          <button
-            class="carousel-control-next"
-            type="button"
-            data-bs-target="#carouselExampleDark"
-            data-bs-slide="next"
-          >
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-          </button>
-        </div>
-      </section>
-      <!-- cards-->
-      <article>
-        <div class="card" style="width: 18rem">
-          <img src="/assets/abc.webp" class="card-img-top" alt="letras simbolizando um dicionário" />
-          <div class="card-body">
-            <h5 class="card-title">Dicionário da nutrição</h5>
-            <p class="card-text">
-              Conheça os principais termos da vida saudável
-            </p>
-            <div class="card-btn">
-              <a href="#" class="btn-btn-primary">LEIA MAIS</a>
-            </div>
-          </div>
-        </div>
-        <div class="card" style="width: 18rem">
-          <img src="/assets/suplementos.webp" class="card-img-top" alt="suplementos" />
-          <div class="card-body">
-            <h5 class="card-title">Suplementos.</h5>
-            <p class="card-text">
-              Conheça os prós e contras do uso de suplementação no seu dia a
-              dia.
-            </p>
-            <div class="card-btn">
-              <a href="#" class="btn-btn-primary">LEIA MAIS</a>
-            </div>
-          </div>
-        </div>
-        <div class="card" style="width: 18rem">
-          <img src="/assets/cafedamanha.webp" class="card-img-top" alt="café da manhã saudável" />
-          <div class="card-body">
-            <h5 class="card-title">Comece bem o seu dia!</h5>
-            <p class="card-text">
-              Confira receitas saudáveis para o seu café da manhã.
-            </p>
-            <div class="card-btn">
-              <a href="#" class="btn-btn-primary">LEIA MAIS</a>
-            </div>
-          </div>
-        </div>
-        <div class="card" style="width: 18rem">
-          <img src="/assets/musculacao.webp" class="card-img-top" alt="exercício fisico: musculação" />
-          <div class="card-body">
-            <h5 class="card-title">Musculação</h5>
-            <p class="card-text">Benefícios da musculação</p>
-            <div class="card-btn">
-              <a href="#" class="btn-btn-primary">LEIA MAIS</a>
-            </div>
-          </div>
-        </div>
-        <div class="card" style="width: 18rem">
-          <img src="/assets/cha.webp" class="card-img-top" alt="chás naturais" />
-          <div class="card-body">
-            <h5 class="card-title">Chás que curam</h5>
-            <p class="card-text">
-              5 receitas de chás que vão melhorar sua saúde
-            </p>
-            <div class="card-btn">
-              <a href="#" class="btn-btn-primary">LEIA MAIS</a>
-            </div>
-          </div>
-        </div>
-      </article>
-
-     <!--Acessibilidade-->
-     <script
-     type="text/javascript"
-     src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"
-     ></script>
-     <script type="text/javascript" src="/src/js/asb.js"></script>
-    
-    <footer>
-    <div id="rodape"></div>
+<body>
+  <header>
+    <div id="menu"></div>
     <script>
-      fetch('rodape.html')
+      fetch('menu_int.html')
         .then(response => response.text())
         .then(data => {
-          document.getElementById('rodape').innerHTML = data;
+          document.getElementById('menu').innerHTML = data;
         })
-        .catch(error => console.error('ERRO AO CARREGAR O RODAPE:', error));
+        .catch(error => console.error('ERRO AO CARREGAR O MENU:', error));
     </script>
-    </footer>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq"
-      crossorigin="anonymous"
-    ></script>
+  </header>
+  <main>
+    <section>
+      <div id="carouselExampleDark" class="carousel carousel-dark slide">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active"
+            aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1"
+            aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2"
+            aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active" data-bs-interval="10000">
+            <img src="/assets/ozempic_carrossel.webp" class="d-block w-100" alt="..." />
+            <div class="carousel-caption custom-caption d-none d-md-block">
+              <h5>OS RISCOS DO OZEMPIC</h5>
+              <p>
+                Saiba as consequências da medicação que se popularizou entre a
+                população... <i>saiba mais</i>
+              </p>
+            </div>
+          </div>
+          <div class="carousel-item" data-bs-interval="2000">
+            <img src="/assets/yoga.webp" class="d-block w-100" alt="..." />
+            <div class="carousel-caption custom-caption d-none d-md-block">
+              <h5>Yoga</h5>
+              <p>Conheça os benefícios para a saúde...<i>saiba mais</i></p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="/assets/terceiraidade.webp" class="d-block w-100" alt="..." />
+            <div class="carousel-caption custom-caption d-none d-md-block">
+              <h5>Hábitos saudáveis na terceira idade</h5>
+              <p>
+                Veja o depoimento de clientes que mudaram sua vida com a
+                consultoria da Vida Ativa...<i>saiba mais</i>
+              </p>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </section>
+    <!-- cards-->
+    <article>
+      <div class="card" style="width: 18rem">
+        <img src="/assets/abc.webp" class="card-img-top" alt="letras simbolizando um dicionário" />
+        <div class="card-body">
+          <h5 class="card-title">Dicionário da nutrição</h5>
+          <p class="card-text">
+            Conheça os principais termos da vida saudável
+          </p>
+          <div class="card-btn">
+            <a href="#" class="btn-btn-primary">LEIA MAIS</a>
+          </div>
+        </div>
+      </div>
+      <div class="card" style="width: 18rem">
+        <img src="/assets/suplementos.webp" class="card-img-top" alt="suplementos" />
+        <div class="card-body">
+          <h5 class="card-title">Suplementos.</h5>
+          <p class="card-text">
+            Conheça os prós e contras do uso de suplementação no seu dia a
+            dia.
+          </p>
+          <div class="card-btn">
+            <a href="#" class="btn-btn-primary">LEIA MAIS</a>
+          </div>
+        </div>
+      </div>
+      <div class="card" style="width: 18rem">
+        <img src="/assets/cafedamanha.webp" class="card-img-top" alt="café da manhã saudável" />
+        <div class="card-body">
+          <h5 class="card-title">Comece bem o seu dia!</h5>
+          <p class="card-text">
+            Confira receitas saudáveis para o seu café da manhã.
+          </p>
+          <div class="card-btn">
+            <a href="#" class="btn-btn-primary">LEIA MAIS</a>
+          </div>
+        </div>
+      </div>
+      <div class="card" style="width: 18rem">
+        <img src="/assets/musculacao.webp" class="card-img-top" alt="exercício fisico: musculação" />
+        <div class="card-body">
+          <h5 class="card-title">Musculação</h5>
+          <p class="card-text">Benefícios da musculação</p>
+          <div class="card-btn">
+            <a href="#" class="btn-btn-primary">LEIA MAIS</a>
+          </div>
+        </div>
+      </div>
+      <div class="card" style="width: 18rem">
+        <img src="/assets/cha.webp" class="card-img-top" alt="chás naturais" />
+        <div class="card-body">
+          <h5 class="card-title">Chás que curam</h5>
+          <p class="card-text">
+            5 receitas de chás que vão melhorar sua saúde
+          </p>
+          <div class="card-btn">
+            <a href="#" class="btn-btn-primary">LEIA MAIS</a>
+          </div>
+        </div>
+      </div>
+    </article>
 
-  </body>
+    <!--Acessibilidade-->
+    <script type="text/javascript"
+      src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
+    <script type="text/javascript" src="/src/js/asb.js"></script>
+
+    <footer>
+      <div id="rodape"></div>
+      <script>
+        fetch('rodape.html')
+          .then(response => response.text())
+          .then(data => {
+            document.getElementById('rodape').innerHTML = data;
+          })
+          .catch(error => console.error('ERRO AO CARREGAR O RODAPE:', error));
+      </script>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq"
+      crossorigin="anonymous"></script>
+
+</body>
+
 </html>
