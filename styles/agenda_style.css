@@ -2,6 +2,7 @@
 main {
   padding: 5rem; /* Espaçamento interno */
   background-image: url(/assets/agenda.webp); /* Imagem de fundo */
+  background-color: #ebf3eb9d;
   background-size: cover; /* Faz a imagem preencher toda a área */
   background-repeat: no-repeat; /* Evita repetição da imagem */
   width: 100%; /* Ocupa toda a largura possível */

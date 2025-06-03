@@ -1,165 +1,254 @@
-/*Banner topo da página inicial*/
-  
-   #banner-home {
-    position: relative; /* Permite posicionar elementos filhos de forma absoluta em relação a este */
-    width: 100%; /* Ocupa toda a largura do container pai */
-    overflow: hidden; /* Esconde qualquer conteúdo que ultrapasse os limites do banner */
-  }
-  
-  #banner-home img {
-    width: 100%; /* Faz com que a imagem ocupe toda a largura disponível */
-    height: auto; /* Mantém a proporção da imagem automaticamente */
-    display: block; /* Remove o espaço em branco abaixo da imagem */
-  }
-  
-  .banner-content {
-    position: absolute; /* Posiciona este conteúdo sobre a imagem */
-    bottom: 1rem; /* Distância da parte inferior do banner */
-    left: 50%; /* Centraliza horizontalmente */
-    transform: translateX(-50%); /* Corrige a centralização exata */
-    text-align: center; /* Centraliza o texto internamente */
-    background: rgba(255, 255, 255, 0.85); /* Fundo branco semi-transparente */
-    padding: 1rem 2rem; /* Espaçamento interno */
-    border-radius: 12px; /* Cantos arredondados */
-    box-shadow: 0 4px 12px rgba(0,0,0,0.15); /* Sombra para dar profundidade */
-    max-width: 90%; /* Limita a largura do conteúdo */
-  }
-  
-  .banner-content h2 {
-    font-size: 2rem; /* Tamanho da fonte do título */
-    color: #333; /* Cor escura para o texto */
-    margin: 0; /* Remove margem padrão do h2 */
-  }
-  
-  .banner-content a {
-    display: inline-block; /* Permite aplicar padding e margin */
-    margin-top: 1rem; /* Espaçamento acima do botão */
-    background: #4CAF50; /* Cor de fundo verde */
-    color: white; /* Cor da fonte branca */
-    padding: 0.75rem 1.5rem; /* Espaçamento interno */
-    border-radius: 8px; /* Cantos arredondados */
-    text-decoration: none; /* Remove sublinhado */
-    font-weight: bold; /* Negrito */
-    transition: background 0.3s ease; /* Transição suave na cor de fundo */
-  }
-  
-  .banner-content a:hover {
-    background: #45a049; /* Tom mais escuro no hover */
-  }
-  
-  /*Seção de conteúdo principal*/
+body{
+  background-color: #ebf3eb9d;
+}
 
-  #conteudo-col-2 {
-    display: flex; /* Layout em linha com flexbox */
-    flex-wrap: wrap; /* Permite quebrar para nova linha em telas menores */
-    justify-content: center; /* Centraliza os itens */
-    padding: 2rem; /* Espaçamento interno */
-    gap: 2rem; /* Espaço entre os elementos */
-  }
-  
-  .caixa-creme {
-    background-color: #fafaf4; /* Cor de fundo creme suave */
-    padding: 2rem; /* Espaçamento interno */
-    text-align: center; /* Centraliza o conteúdo */
-  }
-  
-  .conteudo-centralizado {
-    margin-top: 1rem; /* Espaço acima do conteúdo */
-  }
-  
-  .conteudo-centralizado p {
-    font-weight: bold; /* Texto em negrito */
-    font-size: 1rem; /* Tamanho padrão de fonte */
-    margin-bottom: 0.5rem; /* Espaço abaixo do parágrafo */
-  }
-  
-  .botao-conhecer {
-    display: inline-block; /* Comportamento de botão */
-    background-color: #4CAF50; /* Verde padrão */
-    color: white; /* Texto branco */
-    padding: 0.5rem 1rem; /* Espaçamento interno */
-    border-radius: 6px; /* Bordas arredondadas */
-    text-decoration: none; /* Remove sublinhado */
-    transition: background-color 0.3s ease; /* Efeito suave no hover */
-  }
-  
-  .botao-conhecer:hover {
-    background-color: #45a049; /* Cor levemente mais escura ao passar o mouse */
-  }
-  
-  /*Bloco do cálculo de IMC*/
-  .container-imc {
-    flex: 1 1 300px; /* Cresce, encolhe, base de 300px */
-    position: relative; /* Para posicionar o ::before corretamente */
-    padding: 2rem; /* Espaçamento interno */
-    border-radius: 8px; /* Cantos arredondados */
-    color: white; /* Cor padrão do texto */
-    overflow: hidden; /* Esconde o conteúdo que ultrapassar */
-  }
-  
-  .container-imc::before {
-    content: ""; /* Pseudo-elemento vazio */
-    position: absolute; /* Ocupa todo o container */
-    inset: 0; /* top, right, bottom, left = 0 */
-    background-image: url('/assets/morangoefita.webp'); /* Imagem de fundo decorativa */
-    background-size: cover; /* Cobre todo o espaço */
-    background-position: center; /* Centraliza a imagem */
-    opacity: 0.1; /* Deixa a imagem bem clara, como marca d'água */
-    z-index: 0; /* Fica atrás do conteúdo */
-  }
-  
-  .container-imc h3,
-  .container-imc form {
-    position: relative; /* Coloca acima da imagem de fundo */
-    z-index: 1;
-    color: #530000; /* Cor do texto mais escura */
-  }
-  
-  .container-imc form {
-    display: flex; /* Layout em coluna */
-    flex-direction: column;
-    gap: 0.5rem; /* Espaço entre os campos */
-  }
-  
-  .container-imc input,
-  .container-imc button {
-    padding: 0.5rem; /* Espaço interno */
-    border-radius: 4px; /* Bordas arredondadas */
-    border: none; /* Sem borda */
-  }
-  
-  .container-imc button {
-    background-color: #4CAF50; /* Cor verde */
-    color: white; /* Texto branco */
-    cursor: pointer; /* Muda o cursor para ponteiro */
-  }
-  
-  #resultadoIMC {
-    margin-top: 1rem; /* Espaço acima do resultado */
-  }
-  
-  /* Botão de agendamento */
-  #botaoAgendamento {
-    margin-top: 20px; /* Espaçamento superior */
-    text-align: center; /* Centraliza o botão */
-  }
-  
-  #botaoAgendamento a button {
-    background-color: #01491e; /* Verde escuro */
-    color: #ffffff; /* Texto branco */
-    font-size: 1rem; /* Tamanho da fonte */
-    padding: 12px 24px; /* Espaçamento interno */
-    border: none; /* Remove borda padrão */
-    border-radius: 8px; /* Bordas arredondadas */
-    cursor: pointer; /* Cursor de clique */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra leve */
-    transition: background-color 0.3s ease, transform 0.2s ease; /* Transições suaves */
-  }
-  
-  #botaoAgendamento a button:hover {
-    background-color: #8bcfa4; /* Verde mais claro no hover */
-    transform: translateY(-2px); /* Efeito de "subir" o botão */
-  }
-  
-  
-  
+/*Banner topo da página inicial*/
+
+#banner-home {
+  position: relative;
+  /* Permite posicionar elementos filhos de forma absoluta em relação a este */
+  width: 100%;
+  /* Ocupa toda a largura do container pai */
+  overflow: hidden;
+  /* Esconde qualquer conteúdo que ultrapasse os limites do banner */
+}
+
+#banner-home img {
+  width: 100%;
+  /* Faz com que a imagem ocupe toda a largura disponível */
+  height: auto;
+  /* Mantém a proporção da imagem automaticamente */
+  display: block;
+  /* Remove o espaço em branco abaixo da imagem */
+}
+
+.banner-content {
+  position: absolute;
+  /* Posiciona este conteúdo sobre a imagem */
+  bottom: 1rem;
+  /* Distância da parte inferior do banner */
+  left: 50%;
+  /* Centraliza horizontalmente */
+  transform: translateX(-50%);
+  /* Corrige a centralização exata */
+  text-align: center;
+  /* Centraliza o texto internamente */
+  background: rgba(255, 255, 255, 0.85);
+  /* Fundo branco semi-transparente */
+  padding: 1rem 2rem;
+  /* Espaçamento interno */
+  border-radius: 12px;
+  /* Cantos arredondados */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  /* Sombra para dar profundidade */
+  max-width: 90%;
+  /* Limita a largura do conteúdo */
+}
+
+.banner-content h2 {
+  font-size: 2rem;
+  /* Tamanho da fonte do título */
+  color: #333;
+  /* Cor escura para o texto */
+  margin: 0;
+  /* Remove margem padrão do h2 */
+}
+
+.banner-content a {
+  display: inline-block;
+  /* Permite aplicar padding e margin */
+  margin-top: 1rem;
+  /* Espaçamento acima do botão */
+  background: #4CAF50;
+  /* Cor de fundo verde */
+  color: white;
+  /* Cor da fonte branca */
+  padding: 0.75rem 1.5rem;
+  /* Espaçamento interno */
+  border-radius: 8px;
+  /* Cantos arredondados */
+  text-decoration: none;
+  /* Remove sublinhado */
+  font-weight: bold;
+  /* Negrito */
+  transition: background 0.3s ease;
+  /* Transição suave na cor de fundo */
+}
+
+.banner-content a:hover {
+  background: #45a049;
+  /* Tom mais escuro no hover */
+}
+
+/*Seção de conteúdo principal*/
+
+#conteudo-col-2 {
+  display: flex;
+  /* Layout em linha com flexbox */
+  flex-wrap: wrap;
+  /* Permite quebrar para nova linha em telas menores */
+  justify-content: center;
+  /* Centraliza os itens */
+  padding: 2rem;
+  /* Espaçamento interno */
+  gap: 2rem;
+  /* Espaço entre os elementos */
+}
+
+.caixa-creme {
+  background-color: #f1f1cf79;
+  /* Cor de fundo creme suave */
+  padding: 2rem;
+  /* Espaçamento interno */
+  text-align: center;
+  /* Centraliza o conteúdo */
+  border-radius: 5px;
+}
+
+.conteudo-centralizado {
+  margin-top: 1rem;
+  /* Espaço acima do conteúdo */
+}
+
+.conteudo-centralizado p {
+  font-weight: bold;
+  /* Texto em negrito */
+  font-size: 1rem;
+  /* Tamanho padrão de fonte */
+  margin-bottom: 0.5rem;
+  /* Espaço abaixo do parágrafo */
+}
+
+.botao-conhecer {
+  display: inline-block;
+  /* Comportamento de botão */
+  background-color: #4CAF50;
+  /* Verde padrão */
+  color: white;
+  /* Texto branco */
+  padding: 0.5rem 1rem;
+  /* Espaçamento interno */
+  border-radius: 6px;
+  /* Bordas arredondadas */
+  text-decoration: none;
+  /* Remove sublinhado */
+  transition: background-color 0.3s ease;
+  /* Efeito suave no hover */
+}
+
+.botao-conhecer:hover {
+  background-color: #45a049;
+  /* Cor levemente mais escura ao passar o mouse */
+}
+
+/*Bloco do cálculo de IMC*/
+.container-imc {
+  flex: 1 1 300px;
+  /* Cresce, encolhe, base de 300px */
+  position: relative;
+  /* Para posicionar o ::before corretamente */
+  padding: 2rem;
+  /* Espaçamento interno */
+  border-radius: 8px;
+  /* Cantos arredondados */
+  color: white;
+  /* Cor padrão do texto */
+  overflow: hidden;
+  /* Esconde o conteúdo que ultrapassar */
+}
+
+.container-imc::before {
+  content: "";
+  /* Pseudo-elemento vazio */
+  position: absolute;
+  /* Ocupa todo o container */
+  inset: 0;
+  /* top, right, bottom, left = 0 */
+  background-image: url('/assets/morangoefita.webp');
+  /* Imagem de fundo decorativa */
+  background-size: cover;
+  /* Cobre todo o espaço */
+  background-position: center;
+  /* Centraliza a imagem */
+  opacity: 0.1;
+  /* Deixa a imagem bem clara, como marca d'água */
+  z-index: 0;
+  /* Fica atrás do conteúdo */
+}
+
+.container-imc h3,
+.container-imc form {
+  position: relative;
+  /* Coloca acima da imagem de fundo */
+  z-index: 1;
+  color: #530000;
+  /* Cor do texto mais escura */
+}
+
+.container-imc form {
+  display: flex;
+  /* Layout em coluna */
+  flex-direction: column;
+  gap: 0.5rem;
+  /* Espaço entre os campos */
+}
+
+.container-imc input,
+.container-imc button {
+  padding: 0.5rem;
+  /* Espaço interno */
+  border-radius: 4px;
+  /* Bordas arredondadas */
+  border: none;
+  /* Sem borda */
+}
+
+.container-imc button {
+  background-color: #4CAF50;
+  /* Cor verde */
+  color: white;
+  /* Texto branco */
+  cursor: pointer;
+  /* Muda o cursor para ponteiro */
+}
+
+#resultadoIMC {
+  margin-top: 1rem;
+  /* Espaço acima do resultado */
+}
+
+/* Botão de agendamento */
+#botaoAgendamento {
+  margin-top: 20px;
+  /* Espaçamento superior */
+  text-align: center;
+  /* Centraliza o botão */
+}
+
+#botaoAgendamento a button {
+  background-color: #01491e;
+  /* Verde escuro */
+  color: #ffffff;
+  /* Texto branco */
+  font-size: 1rem;
+  /* Tamanho da fonte */
+  padding: 12px 24px;
+  /* Espaçamento interno */
+  border: none;
+  /* Remove borda padrão */
+  border-radius: 8px;
+  /* Bordas arredondadas */
+  cursor: pointer;
+  /* Cursor de clique */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  /* Sombra leve */
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  /* Transições suaves */
+}
+
+#botaoAgendamento a button:hover {
+  background-color: #8bcfa4;
+  /* Verde mais claro no hover */
+  transform: translateY(-2px);
+  /* Efeito de "subir" o botão */
+}

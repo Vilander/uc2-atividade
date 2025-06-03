@@ -1,33 +1,64 @@
+
+body{
+  background-color: #ebf3eb9d
+}
+
+main{
+  background-color: #ebf3eb9d
+}
+
+.text-center{
+  margin:0 auto;
+  padding-top: 1rem;
+  padding-bottom: 2rem;
+  color:#005014
+}
+
 /* Redes sociais - layout com flex */
 .social-icons {
-  display: flex; /* Aplica o layout flexível para os itens filhos */
-  justify-content: center; /* Centraliza os itens horizontalmente */
-  align-items: center; /* Centraliza os itens verticalmente */
-  gap: 12px; /* Define um espaçamento de 12px entre os itens */
-  flex-wrap: wrap; /* Permite que os itens quebrem para a próxima linha se necessário */
-  margin-top: 1rem; /* Espaço superior de 1rem (tamanho relativo à fonte raiz) */
+  display: flex;
+  /* Aplica o layout flexível para os itens filhos */
+  justify-content: center;
+  /* Centraliza os itens horizontalmente */
+  align-items: center;
+  /* Centraliza os itens verticalmente */
+  gap: 12px;
+  /* Define um espaçamento de 12px entre os itens */
+  flex-wrap: wrap;
+  /* Permite que os itens quebrem para a próxima linha se necessário */
+  margin-top: 1rem;
+  /* Espaço superior de 1rem (tamanho relativo à fonte raiz) */
 }
 
 /* Ícones sociais */
 .social-icon {
-  width: 2rem; /* Define a largura dos ícones como 2rem */
-  height: auto; /* Ajusta a altura proporcionalmente à largura (mantém a proporção da imagem) */
-  transition: transform 0.2s ease-in-out; /* Adiciona uma transição suave ao aplicar transformações */
+  width: 2rem;
+  /* Define a largura dos ícones como 2rem */
+  height: auto;
+  /* Ajusta a altura proporcionalmente à largura (mantém a proporção da imagem) */
+  transition: transform 0.2s ease-in-out;
+  /* Adiciona uma transição suave ao aplicar transformações */
 }
 
 .social-icon:hover {
-  transform: scale(1.1); /* Aumenta levemente o tamanho do ícone ao passar o mouse (hover) */
+  transform: scale(1.1);
+  /* Aumenta levemente o tamanho do ícone ao passar o mouse (hover) */
 }
 
 /* Logo do rodapé */
 .footer-logo {
-  width: 2rem; /* Define a largura da logo como 2rem */
-  height: auto; /* Mantém a proporção da imagem automaticamente */
+  width: 2rem;
+  /* Define a largura da logo como 2rem */
+  height: auto;
+  /* Mantém a proporção da imagem automaticamente */
 }
 
 /* Texto do rodapé */
 .footer-text {
-  font-family: Verdana, Geneva, Tahoma, sans-serif; /* Define a família de fontes do texto */
-  font-style: italic; /* Aplica estilo itálico ao texto */
-  font-size: small; /* Define o tamanho da fonte como "small", que é menor que o padrão */
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  /* Define a família de fontes do texto */
+  font-style: italic;
+  /* Aplica estilo itálico ao texto */
+  font-size: small;
+  /* Define o tamanho da fonte como "small", que é menor que o padrão */
 }

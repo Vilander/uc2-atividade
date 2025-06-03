@@ -19,9 +19,33 @@
     /* Tamanho de fonte pequeno */
   }
 
+  .card-footer {
+    display: flex;
+    padding-top: 0.5rem;
+    padding-left: 0.3rem;
+    padding-right: 0.3rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    gap: 2rem;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
   /*  ÍCONES SOCIAIS  */
 
   /* Estilo para o container dos ícones sociais */
+
+  .card-body{
+    background-color: #f5f5f5;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-between;
+    justify-content: center;
+    align-items: flex-end;
+    gap: 2rem;
+    padding: 2rem;
+  }
   .social-icons {
     display: flex;
     /* Layout flexível */
@@ -52,16 +76,16 @@
   }
 </style>
 
-<div class="card text-center">
-  <div class="card-header">
+
+<div class="card-body">
+  <div>
     <a href="index.html">
       <img src="/assets/logo02.png" class="footer-logo" alt="logotipo">
     </a>
   </div>
-
-  <div class="card-body">
-    <h5 class="card-title" style="font-size: small;">Acesse nossas redes:</h5>
+  <div>
     <div class="social-icons mt-3">
+      <h5 class="card-title" style="font-size: small;">Acesse nossas redes: </h5>
       <a href="https://www.facebook.com/seuperfil" target="_blank">
         <img src="/assets/facebook.png" class="social-icon" alt="facebook">
       </a>
@@ -74,15 +98,17 @@
       <a href="https://wa.me/seunumerowhatsapp" target="_blank">
         <img src="/assets/whatsapp.png" class="social-icon" alt="whatsapp">
       </a>
+      
 
     </div>
-    </br>
-    <p class="card-text">Clínica Vida Ativa - Americana/SP<br>
-      CNPJ: 00.000.000/0001-99</p>
-    <a href="/pages/termo.html" class="btn btn-primary">Política de privacidade</a>
   </div>
 
-  <div class="card-footer text-body-secondary footer-text">
-    Copyright (c) 2025 Vilander Costa
-  </div>
+</div>
+
+<div class="card-footer text-body-secondary footer-text">
+  <p>Copyright &copy 2025 Vilander Costa</p>
+  <p class="card-text">Clínica Vida Ativa - Americana/SP - CNPJ: 00.000.000/0001-99</p>
+  <p><a href="/pages/termo.html">Política de privacidade</a></p>
+
+</div>
 </div>

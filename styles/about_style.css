@@ -11,8 +11,8 @@ body {
   text-align: center;                  /* Centraliza o texto horizontalmente */
   padding-top: 15px;                   /* Adiciona um espaçamento superior de 15px */
   font-size: 48px;                     /* Define o tamanho da fonte em 48 pixels */
-  color: #ffffff;                      /* Define a cor do texto como branco */
-  text-shadow: 0 5px 8px rgba(0, 0, 0, 0.5); /* Aplica sombra ao texto com deslocamento vertical de 5px e blur de 8px, em preto translúcido */
+  color: #005014;                      /* Define a cor do texto como branco */
+ /* text-shadow: 0 5px 8px rgba(0, 0, 0, 0.5);  Aplica sombra ao texto com deslocamento vertical de 5px e blur de 8px, em preto translúcido */
 }
 
 .titulo-segundo {
@@ -34,7 +34,7 @@ strong {
 
 /*  Fundo do conteúdo principal  */
 main {
-  background-image: url(/assets/gray-texture.webp); /* Aplica uma imagem de fundo à área <main> */
+  background-color: #ebf3eb9d; /* Aplica uma imagem de fundo à área <main> */
 }
 
 /*  Seção "Sobre" com centralização e layout flexível  */
