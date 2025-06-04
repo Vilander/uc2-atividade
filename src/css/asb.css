@@ -25,7 +25,9 @@
 #accessibilityBar button {
     outline: none !important;
     box-shadow: none !important;
-    -webkit-appearance: none;
+    -webkit-appearance: none; 
+    -moz-appearance: none;   
+    appearance: none;       
     cursor: pointer
 }
 
