@@ -14,7 +14,11 @@ body {
 h1, h2, h3 {
   color: #2e7d32; /* Cor verde para os títulos */
 }
-
+.topo-servico{
+  text-align: center; 
+  padding-top: 15px; 
+  color: #005014;"
+}
 /* Estilo para o texto em negrito */
 strong {
   color: #023004; /* Cor verde escuro para texto em negrito */

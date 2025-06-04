@@ -45,6 +45,7 @@ article {
   gap: 1rem; /* espaçamento entre os elementos (cards) */
   flex-wrap: wrap; /* permite que os elementos quebrem linha */
   padding-top: 1rem; /* espaço superior interno */
+  padding-bottom: 2rem;
   justify-content: center; /* centraliza os elementos na horizontal */
   margin: 0 auto; /* centraliza o container na página */
 }
