@@ -18,6 +18,9 @@ h1, h2, h3 {
   text-align: center; 
   padding-top: 15px; 
   color: #005014;
+  font-family:Arial, Helvetica, sans-serif;  
+  font-weight: bold; 
+  font-size: 38px;
 }
 /* Estilo para o texto em negrito */
 strong {
@@ -42,7 +45,7 @@ main {
 
 /* Caixa de conteúdo com fundo suave e bordas arredondadas */
 .caixa-creme {
-  background-color: #daf1dd70; /* Cor de fundo creme com leve transparência */
+  background-color: #ffffff; /* Cor de fundo creme com leve transparência */
   padding: 2rem; /* Espaçamento interno de 2rem */
   text-align: center; /* Centraliza o texto dentro da caixa */
   border-radius: 8px; /* Cantos arredondados de 8px */

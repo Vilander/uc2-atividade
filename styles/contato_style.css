@@ -11,9 +11,17 @@ main{
   margin:0 auto;
   padding-top: 1rem;
   padding-bottom: 2rem;
-  color:#005014
+  color:#005014;
+  font-family:Arial, Helvetica, sans-serif;  
+  font-weight: bold;
+  font-size: 38px;
 }
 
+.text-secondary{
+  font-size:medium;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: lighter;
+}
 /* Redes sociais - layout com flex */
 .social-icons {
   display: flex;
